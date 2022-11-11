@@ -1,5 +1,10 @@
+import {Fragment} from "react";
+import {Outlet} from "react-router-dom";
+
 function Navbar() {
     return (
+        <Fragment>
+
         <nav className="nav">
             <a href="/" className="site-title">Panda</a>
             <ul>
@@ -8,6 +13,8 @@ function Navbar() {
                 <li><a href="/contact">Contact us</a></li>
             </ul>
         </nav>
+            <Outlet/>
+        </Fragment>
     )
 }
 export default Navbar;
